@@ -1,0 +1,69 @@
+Layers,Parameter,Max_Diff,Status
+2,Embedding.weight,4.09e-07,PASS
+2,LM_Head.weight,1.83e-07,PASS
+2,Layer 0 mamba.A_log,1.91e-06,PASS
+2,Layer 0 FFN W1,4.21e-07,PASS
+2,Layer 1 mamba.A_log,1.43e-06,PASS
+2,Layer 1 FFN W1,1.75e-07,PASS
+4,Embedding.weight,1.56e-06,PASS
+4,LM_Head.weight,1.32e-06,PASS
+4,Layer 0 mamba.A_log,7.15e-06,PASS
+4,Layer 0 FFN W1,2.15e-06,PASS
+4,Layer 1 mamba.A_log,2.15e-06,PASS
+4,Layer 1 FFN W1,8.49e-07,PASS
+4,Layer 2 mamba.A_log,1.67e-06,PASS
+4,Layer 2 FFN W1,5.08e-07,PASS
+4,Layer 3 mamba.A_log,5.96e-07,PASS
+4,Layer 3 FFN W1,3.05e-07,PASS
+8,Embedding.weight,3.49e-06,PASS
+8,LM_Head.weight,3.21e-06,PASS
+8,Layer 0 mamba.A_log,7.63e-06,PASS
+8,Layer 0 FFN W1,7.39e-06,PASS
+8,Layer 1 mamba.A_log,1.24e-05,PASS
+8,Layer 1 FFN W1,3.52e-06,PASS
+8,Layer 2 mamba.A_log,3.81e-06,PASS
+8,Layer 2 FFN W1,1.52e-06,PASS
+8,Layer 3 mamba.A_log,5.01e-06,PASS
+8,Layer 3 FFN W1,1.16e-06,PASS
+8,Layer 4 mamba.A_log,1.67e-06,PASS
+8,Layer 4 FFN W1,1.01e-06,PASS
+8,Layer 5 mamba.A_log,1.19e-06,PASS
+8,Layer 5 FFN W1,9.09e-07,PASS
+8,Layer 6 mamba.A_log,2.15e-06,PASS
+8,Layer 6 FFN W1,6.39e-07,PASS
+8,Layer 7 mamba.A_log,1.67e-06,PASS
+8,Layer 7 FFN W1,5.22e-07,PASS
+16,Embedding.weight,1.07e-05,PASS
+16,LM_Head.weight,7.23e-06,PASS
+16,Layer 0 mamba.A_log,4.48e-05,PASS
+16,Layer 0 FFN W1,2.25e-05,PASS
+16,Layer 1 mamba.A_log,1.43e-05,PASS
+16,Layer 1 FFN W1,1.59e-05,PASS
+16,Layer 2 mamba.A_log,1.24e-05,PASS
+16,Layer 2 FFN W1,5.25e-06,PASS
+16,Layer 3 mamba.A_log,6.53e-06,PASS
+16,Layer 3 FFN W1,4.13e-06,PASS
+16,Layer 4 mamba.A_log,3.61e-06,PASS
+16,Layer 4 FFN W1,3.11e-06,PASS
+16,Layer 5 mamba.A_log,1.24e-05,PASS
+16,Layer 5 FFN W1,2.83e-06,PASS
+16,Layer 6 mamba.A_log,1.25e-05,PASS
+16,Layer 6 FFN W1,2.34e-06,PASS
+16,Layer 7 mamba.A_log,7.87e-06,PASS
+16,Layer 7 FFN W1,1.71e-06,PASS
+16,Layer 8 mamba.A_log,2.62e-06,PASS
+16,Layer 8 FFN W1,1.97e-06,PASS
+16,Layer 9 mamba.A_log,7.63e-06,PASS
+16,Layer 9 FFN W1,1.78e-06,PASS
+16,Layer 10 mamba.A_log,8.11e-06,PASS
+16,Layer 10 FFN W1,1.91e-06,PASS
+16,Layer 11 mamba.A_log,7.15e-06,PASS
+16,Layer 11 FFN W1,1.34e-06,PASS
+16,Layer 12 mamba.A_log,1.81e-06,PASS
+16,Layer 12 FFN W1,1.10e-06,PASS
+16,Layer 13 mamba.A_log,4.11e-06,PASS
+16,Layer 13 FFN W1,1.04e-06,PASS
+16,Layer 14 mamba.A_log,9.52e-06,PASS
+16,Layer 14 FFN W1,1.20e-06,PASS
+16,Layer 15 mamba.A_log,1.31e-06,PASS
+16,Layer 15 FFN W1,7.26e-07,PASS
