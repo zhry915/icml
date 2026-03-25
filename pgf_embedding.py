@@ -8,9 +8,6 @@ def _embedding_block_forward_jit(
     input_ids_block: torch.Tensor,  # (block_size,)
     weight: torch.Tensor,  # (vocab_size, d_model)
 ) -> torch.Tensor:
-    """
-    JIT 优化的 Embedding block 前向传播
-    """
     return F.embedding(input_ids_block, weight)  # (block_size, d_model)
 
 
@@ -121,7 +118,7 @@ def pgf_embedding_forward(
     if streaming:
         return None
     else:
-        embeddings = torch.cat(output_list, dim=0)  # (B*L, d_model) 或 (L, d_model)
+        embeddings = torch.cat(output_list, dim=0)  # (B*L, d_model) or (L, d_model)
         if has_batch:
             embeddings = embeddings.view(B, L, -1)  # (B, L, d_model)
         return embeddings

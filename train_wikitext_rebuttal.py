@@ -8,7 +8,7 @@ import csv
 import pyarrow as pa
 import matplotlib.pyplot as plt
 
-# 导入核心组件
+# Import core components
 from pgf_embedding import pgf_embedding_forward, pgf_embedding_grad
 from pgf_mamba_block import PGFMambaBlock, PGFMambaSequential
 from pgf_lm_head import pgf_lm_head_forward, pgf_lm_head_grad

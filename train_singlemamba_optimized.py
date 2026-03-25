@@ -212,7 +212,7 @@ class SingleLayerMambaPGF(nn.Module):
         # Use detached version for output to avoid double backprop in gradient computation
         h_contrib = (C_vec_t.unsqueeze(2) * h_traj_for_output).sum(dim=-1)  # (L, B, D)
         if self.act_fn is not None:
-            h_contrib_act = self.act_fn(h_contrib)  # 应用激活函数
+            h_contrib_act = self.act_fn(h_contrib)  # Apply activation function
             y_raw = h_contrib_act + self.D * u_t
         else:
             y_raw = h_contrib + self.D * u_t

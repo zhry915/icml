@@ -16,9 +16,7 @@ def _lm_head_block_forward_jit(
     hidden_block: torch.Tensor,  # (block_size, d_model)
     W_lm_head: torch.Tensor,  # (vocab_size, d_model)
 ) -> torch.Tensor:
-    """
-    JIT 优化的 LM Head block 前向传播
-    """
+
     W_lm_head_T = W_lm_head.t()  # (d_model, vocab_size)
     logits_block = torch.matmul(hidden_block, W_lm_head_T)  # (block_size, vocab_size)
     return logits_block

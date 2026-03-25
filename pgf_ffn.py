@@ -15,13 +15,11 @@ else:
 
 @torch.jit.script
 def _gelu_jit(x: torch.Tensor) -> torch.Tensor:
-    """GELU 激活函数（JIT 优化）"""
     return 0.5 * x * (1.0 + torch.tanh(0.7978845608 * (x + 0.044715 * x * x * x)))
 
 
 @torch.jit.script
 def _gelu_prime_jit(x: torch.Tensor) -> torch.Tensor:
-    """GELU 激活函数的导数（JIT 优化）"""
     tanh_arg = 0.7978845608 * (x + 0.044715 * x * x * x)
     tanh_val = torch.tanh(tanh_arg)
     sech2 = 1.0 - tanh_val * tanh_val
@@ -30,7 +28,6 @@ def _gelu_prime_jit(x: torch.Tensor) -> torch.Tensor:
 
 @torch.jit.script
 def _relu_prime_jit(x: torch.Tensor) -> torch.Tensor:
-    """ReLU 激活函数的导数（JIT 优化）"""
     return (x > 0).to(x.dtype)
 
 
@@ -43,10 +40,6 @@ def _ffn_block_forward_jit(
     b2: torch.Tensor,  # (d_out,)
     use_gelu: bool,
 ) -> torch.Tensor:
-    """
-    JIT 优化的 FFN block 前向传播
-    注意：JIT script 不支持字符串比较，所以使用 bool 参数
-    """
     W1_T = W1.t()  # (d_in, d_hidden) - transpose 
     z_block = torch.matmul(x_block, W1_T) + b1  # (block_size, d_hidden)
     
