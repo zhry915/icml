@@ -41,4 +41,4 @@ We demonstrate that PGF is mathematically equivalent to standard backpropagation
 
 ![Extreme Sequence Length Analysis](results/Fig_Rebuttal_Extreme_Length/Fig_Rebuttal_Extreme_Length_01.png)
 
-**Figure: Extreme Sequence Length Analysis.** PGF successfully trains on ultra-long sequences (1M+ tokens) with a stable memory consumption of **~1.1 GB**. The loss rapidly decreases from **16.8** to **6.7**, demonstrating successful optimization in regimes entirely inaccessible to standard Autograd-based Mamba implementations.
+**Figure: Extreme Sequence Length Analysis.** PGF successfully trains on ultra-long sequences (1M+ tokens) with a stable memory consumption of **~1.1 GB**. The loss rapidly decreases from **16.8** to **4.3**, demonstrating successful optimization in regimes entirely inaccessible to standard Autograd-based Mamba implementations.
