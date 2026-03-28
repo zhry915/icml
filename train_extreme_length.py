@@ -171,7 +171,7 @@ def run_extreme_training():
     d_state = 16
     d_ff = 128         
     block_size = 64
-    max_steps = 20     # Just run a few steps to prove convergence and no OOM
+    max_steps = 20     
     n_layers = 16      # 16 layers
     
     # Load data
