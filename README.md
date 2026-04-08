@@ -8,8 +8,7 @@ In this rebuttal supplement, we provide comprehensive experimental evidence addr
 2. **Component-wise gradient exactness** with errors below **$10^{-5}$**
 3. **End-to-end convergence** on WikiText-2 matching Autograd
 4. **Extreme sequence length** (1M+) training with stable **1.1 GB** memory footprint
-
----
+5. **Comprehensive benchmarking tools** including `benchmark_pgf.py` for performance evaluation and `pgf_linear_attn.py` for linear attention implementation
 
 ## 1. Efficiency & Scalability: Constant Memory $O(1)$
 
